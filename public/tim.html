@@ -1,0 +1,46 @@
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'>
+</script>
+<script>
+$(function(){
+  $("#dbutton").click(function(){
+    if ($("#aid").val()=="all"){
+      jQuery.ajax({
+    url: "/api/articles", 
+    type: "DELETE",
+    data:{auth:$("#dauth").val()},
+    success: function (data, textStatus, jqXHR) { 
+        console.log("Post resposne:"); 
+        console.dir(data); 
+        console.log(textStatus); 
+        console.dir(jqXHR); 
+    }
+    })
+    }else{
+      jQuery.ajax({
+    url: "/api/articles/"+$("#aid").val(), 
+    type: "DELETE",
+    data:{auth:$("#dauth").val()},
+    success: function (data, textStatus, jqXHR) { 
+        console.log("Post resposne:"); 
+        console.dir(data); 
+        console.log(textStatus); 
+        console.dir(jqXHR); 
+    }
+});
+    }
+  })
+})
+</script>
+<h3>POST</h3>
+<form method="post" action="./api/articles">
+<input type="text" name="auth" placeholder="auth"></input>
+<input type="text" name="title" placeholder="title"></input>
+<br/>
+<input type="textarea" name="content" placeholder="content" style="width:500px;height:500px;"></input>
+<input type="submit"/>
+</form>
+<h3>PUT</h3>
+<h3>DELETE</h3>
+<input type="text" id="aid" placeholder="id"/>
+<input type="text" id="dauth" placeholder="auth"/>
+<input type="button" id="dbutton" value="submit" />

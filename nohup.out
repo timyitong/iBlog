@@ -1,0 +1,16 @@
+Listening on port 300
+Listening on port 300
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:670:11)
+    at Array.0 (net.js:771:26)
+    at EventEmitter._tickCallback (node.js:192:40)
+Listening on port 300
+POST: 
+{ auth: 'T6264',
+  title: 'Bought yitongz.com as another domain for this personal homepage',
+  content: 'I just bought <a href="http://www.yitongz.com">yitongz.com</a> and copied the codes of this site into my VPS server. So now my website can also be viewed through www.yitongz.com.' }
+created

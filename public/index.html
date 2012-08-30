@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
+ 
+<head profile="http://gmpg.org/xfn/11"> 
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ 
+    <title>Home | Yitong Zhou</title> 
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
+	<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" /> 
+    <meta name="generator" content="" /> 
+	<meta name="description" content="Yitong Zhou, Heinz College, Carnegie Mellon University. Research, papers, CV, and contact information." />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script>
+	$(function(){
+		$('[navi]').each(function(){
+		  	var item=$(this).attr('navi')
+			$('.item[tag='+item+']').load('./'+item+'.html')
+		})
+		$('[navi]').click(function(){
+			var item=$(this).attr('navi')
+
+			var left=0-$(this).attr('left')*500
+			$('#mask').animate({left:left})
+		})
+
+		$('[navi]:first').click()
+
+		
+	});
+	</script>
+	<style>
+    .blog_content{
+	text-align:right;
+	}
+	</style>
+</head>
+ 
+<body>
+
+	<div id="wrapper">	<!-- wrapper --> 
+
+        <div id="content">	 <!-- Content -->
+			<div class="title"> 
+				<a href="./index.html"> 
+					<h1> <span class="h1alt">Yitong</span>Zhou</h1> 
+				</a>
+			</div>
+			<div class="topmenu"> <!-- Top Menu  -->
+				<b><a href="javascript:void(0);" navi='bio' left='0'>Bio</a> &nbsp; &nbsp; 
+				   <a href="javascript:void(0);" navi='blogs' left='1'>Blogs</a> &nbsp; &nbsp; 
+				   <a href="javascript:void(0);" navi='projects' left='2'>Projects</a> &nbsp; &nbsp;  
+				   <a href="javascript:void(0);" navi='resources' left='3'>Resources</a>
+				</b>
+			</div>
+			<div class='maincontent'>
+				<ul id='mask'>
+					<li tag='bio' class='item'></li>
+
+					<li tag='blogs' class='item'></li>
+
+					<li tag='projects' class='item'></li>
+
+					<li tag='resources' class='item'></li>
+				</ul>
+			</div>
+		</div>	<!-- Content -->
+
+		<div id="menu">		<!-- Menu -->
+			<h1>Contact</h1>
+			Heinz College	<br/>
+			Carnegie Mellon University	<br/>
+			4800 Forbes Ave.	<br/>
+			Pittsburgh PA, 15213	<br/>
+			<br/>
+			yitongz#andrew.cmu.edu	<br/>
+			ph: 412.956.0308 <br/>
+			<div class="clear"></div>
+			<h1>Links</h1> 	
+			<ol id="nav"> 		
+				<li><a href="./index.html">Home</a></li> 		
+				<li><a href="Resume_YitongZhou.pdf_2012Aug.pdf">Resume</a></li> 
+			</ol>
+			<div class="clear"></div>
+		</div>
+
+	</div> <!-- wrapper --> 
+ 
+</body> 
+ 
+</html> 

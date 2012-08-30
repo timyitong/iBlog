@@ -1,0 +1,33 @@
+
+<script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script src="./javascripts/underscore-min.js"></script>
+<script src="./javascripts/backbone-min.js"></script>
+<script src="./javascripts/blogs.js"></script>
+<style>
+.time{
+float: right;
+font-size: 12px;
+color: #999;
+}
+</style>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="item-template">
+    <div class="view">
+      <strong><a href='javascript:void(0);' class='blog_title'><%= title %></a></strong>
+	  <div class='time'><%=ctime.substring(0,10)%></div>
+	  <br/>
+	  <span class='blog_content' style='display:none;'><%=content%></span>
+      <a class="destroy"></a>
+    </div>
+  </script>
+
+  <script type="text/template" id="stats-template">
+  </script>
+<div id="blog_app">
+	<div id="main">
+	<ul id='article-list'>
+	</ul>
+	</div>
+</div>
