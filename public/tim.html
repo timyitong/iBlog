@@ -1,5 +1,8 @@
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'>
-</script>
+<html>
+<head>
+<link rel="stylesheet" href="./css/tim.css"  type="text/css" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 <script>
 $(function(){
   $("#dbutton").click(function(){
@@ -31,21 +34,24 @@ $(function(){
   })
 })
 </script>
-<h3>POST</h3>
-<form enctype="multipart/form-data" method="post" action="./api/articles">
-<input type="text" name="auth" placeholder="auth"></input>
-<input type="text" name="title" placeholder="title"></input>
-<input type="file" name="pic" accept="image/*" capture="camera"/>
-<br/>
-<textarea name="content" placeholder="content" cols="50" rows="10" style="width:500px;height:200px;">
-</textarea>
-<input type="submit"/>
-</form>
+</head>
+<body>
+<h3>POST a MiniBlog</h3>
+    <form enctype="multipart/form-data" method="post" action="./api/articles">
+    <input type="text" name="auth" placeholder="auth" class='auth'></input>
+    <input type="text" name="title" placeholder="title" class='title'></input>
+    <input type="file" name="pic" accept="image/*" capture="camera" class='photo' value="Send a Photo"/>
+    <br/>
+    <textarea name="content" placeholder="content" cols="50" rows="10" class='content'>
+    </textarea>
+    <input type="submit"/>
+    </form>
 <h3>PUT</h3>
 <h3>DELETE</h3>
 <input type="text" id="aid" placeholder="id"/>
 <input type="text" id="dauth" placeholder="auth"/>
 <input type="button" id="dbutton" value="submit" />
-
+</body>
+</html>
 
 

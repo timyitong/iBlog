@@ -1,0 +1,24 @@
+
+/*iPhone Safari CSS*/
+@media screen and (max-device-width: 480px){
+body{
+  -webkit-text-size-adjust:none;
+  font-family:Helvetica, Arial, Verdana, sans-serif;
+  padding:5px;
+}
+.auth{
+
+}
+.title{
+
+}
+.photo{
+
+}
+.content{
+	width:100%;
+	height:30%;
+}
+
+}
+/*--------------*/
