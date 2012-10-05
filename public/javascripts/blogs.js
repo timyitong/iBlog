@@ -6,7 +6,8 @@ $(function(){
 			return{
 			  title: "plz type-in a title",
 			  content:"to be added",
-			  ctime:""
+			  ctime:"",
+			  image:""
 			}
 		},
 		initialize: function(){
@@ -37,6 +38,8 @@ $(function(){
 		initialize: function(){
 		},
 		render: function(){
+                  if (this.model.image==undefined)
+                      this.model.image=""
 		  this.$el.html(this.template(this.model.toJSON()))
 			return this
 		},

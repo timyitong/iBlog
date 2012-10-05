@@ -7,7 +7,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
-    padding: 0;
+   padding: 0;
     border: 0;
     outline: 0;
     font-weight: inherit;
@@ -183,7 +183,9 @@ h6 {
     /*float: left;*/
     text-transform: uppercase;
 }
-
+.view{
+  text-align:justify;
+}
 #nav li a {
     padding: 4px 0;
     font-size: 11px;

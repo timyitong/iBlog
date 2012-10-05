@@ -14,3 +14,109 @@ POST:
   title: 'Bought yitongz.com as another domain for this personal homepage',
   content: 'I just bought <a href="http://www.yitongz.com">yitongz.com</a> and copied the codes of this site into my VPS server. So now my website can also be viewed through www.yitongz.com.' }
 created
+Error: MultipartParser.end(): stream ended unexpectedly: state = HEADER_FIELD_START
+    at MultipartParser.end (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/multipart_parser.js:306:12)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:102:30)
+    at IncomingMessage.emit (events.js:64:17)
+    at HTTPParser.onMessageComplete (http.js:137:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+Error: parser error, 0 of 515 bytes parsed
+    at IncomingForm.write (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:145:17)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:95:12)
+    at IncomingMessage.emit (events.js:67:17)
+    at HTTPParser.onBody (http.js:115:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+Error: parser error, 0 of 429 bytes parsed
+    at IncomingForm.write (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:145:17)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:95:12)
+    at IncomingMessage.emit (events.js:67:17)
+    at HTTPParser.onBody (http.js:115:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+Error: parser error, 0 of 903 bytes parsed
+    at IncomingForm.write (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:145:17)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:95:12)
+    at IncomingMessage.emit (events.js:67:17)
+    at HTTPParser.onBody (http.js:115:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+Error: MultipartParser.end(): stream ended unexpectedly: state = HEADER_FIELD_START
+    at MultipartParser.end (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/multipart_parser.js:306:12)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:102:30)
+    at IncomingMessage.emit (events.js:64:17)
+    at HTTPParser.onMessageComplete (http.js:137:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+Error: MultipartParser.end(): stream ended unexpectedly: state = PART_DATA
+    at MultipartParser.end (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/multipart_parser.js:306:12)
+    at IncomingMessage.<anonymous> (/home/timyitong/iblog/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js:102:30)
+    at IncomingMessage.emit (events.js:64:17)
+    at HTTPParser.onMessageComplete (http.js:137:23)
+    at Socket.ondata (http.js:1410:22)
+    at TCP.onread (net.js:374:27)
+POST: 
+{ auth: 'T6264', title: 'Test from iPhone', content: 'Test' }
+created
+Listening on port 300
+Listening on port 300
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:670:11)
+    at Array.0 (net.js:771:26)
+    at EventEmitter._tickCallback (node.js:192:40)
+Listening on port 300
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:670:11)
+    at Array.0 (net.js:771:26)
+    at EventEmitter._tickCallback (node.js:192:40)
+Listening on port 300
+Listening on port 300
+Listening on port 300
+POST: 
+{ auth: '',
+  title: '',
+  content: 'dskjkkkkkkkkkkkkkkkkkksdlfsdlf' }
+Listening on port 300
+POST: 
+{ auth: '', title: '', content: 'dsfd' }
+
+/home/timyitong/iblog/app.js:51
+     if (err) throw err
+                    ^
+Error: ENOTDIR, rename '/tmp/8d7cbb2532c2c680ce8e06b991becd4b'
+Listening on port 300
+POST: 
+{ auth: '', title: '', content: 'sdfsd' }
+Listening on port 300
+removed
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+TypeError: Cannot call method 'remove' of null
+    at Promise.<anonymous> (/home/timyitong/iblog/app.js:105:19)
+    at Promise.<anonymous> (/home/timyitong/iblog/node_modules/mongoose/lib/promise.js:128:8)
+    at Promise.<anonymous> (events.js:67:17)
+    at Promise.emit (/home/timyitong/iblog/node_modules/mongoose/lib/promise.js:66:38)
+    at Promise.complete (/home/timyitong/iblog/node_modules/mongoose/lib/promise.js:77:20)
+    at /home/timyitong/iblog/node_modules/mongoose/lib/query.js:1451:30
+    at /home/timyitong/iblog/node_modules/mongoose/lib/utils.js:431:16
+    at /home/timyitong/iblog/node_modules/mongoose/node_modules/mongodb/lib/mongodb/collection.js:953:5
+    at /home/timyitong/iblog/node_modules/mongoose/node_modules/mongodb/lib/mongodb/cursor.js:148:9
+    at /home/timyitong/iblog/node_modules/mongoose/node_modules/mongodb/lib/mongodb/cursor.js:188:11
+Listening on port 300
+POST: 
+{ auth: 'T6264',
+  title: 'Photo from iPhone--Problem to be solved',
+  content: 'Seems still some problems left for to tackle... How to lower the quality of photo to boost uploading speed and how to judge when to rotate the photo...' }
+created
+Listening on port 300

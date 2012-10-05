@@ -32,11 +32,13 @@ $(function(){
 })
 </script>
 <h3>POST</h3>
-<form method="post" action="./api/articles">
+<form enctype="multipart/form-data" method="post" action="./api/articles">
 <input type="text" name="auth" placeholder="auth"></input>
 <input type="text" name="title" placeholder="title"></input>
+<input type="file" name="pic" accept="image/*" capture="camera"/>
 <br/>
-<input type="textarea" name="content" placeholder="content" style="width:500px;height:500px;"></input>
+<textarea name="content" placeholder="content" cols="50" rows="10" style="width:500px;height:200px;">
+</textarea>
 <input type="submit"/>
 </form>
 <h3>PUT</h3>
@@ -44,3 +46,6 @@ $(function(){
 <input type="text" id="aid" placeholder="id"/>
 <input type="text" id="dauth" placeholder="auth"/>
 <input type="button" id="dbutton" value="submit" />
+
+
+

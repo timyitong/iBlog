@@ -1,4 +1,5 @@
 var express = require('express')
+var fs=require('fs')
 var application_root = __dirname
 var path = require("path")
 var mongoose = require("mongoose")
@@ -13,13 +14,15 @@ app.configure(function (){
     app.use(app.router)
     app.use(express.static(path.join(application_root,"public")))
     app.use(express.errorHandler({dumpExceptions:true,showStack:true}))
+    app.use(express.bodyParser({keepExtensions: true, uploadDir:"./public/uploads"}))
 })
 
 var Schema = mongoose.Schema
 var Article= new Schema({
     title: String,
     content: String,
-    ctime: {type:Date,default:Date.now}
+    ctime: {type:Date,default:Date.now},
+    image: String
 })
 var ArticleModel = mongoose.model('Article', Article)
 
@@ -28,7 +31,7 @@ app.get('/api',function(req,res){
     res.send('Hellon World'+req.ip)
 })
 app.get('/api/articles',function(req,res){
-    return ArticleModel.find(function (err, articles){
+    return ArticleModel.find().sort("-ctime").exec(function (err, articles){
         if (!err){
              res.header("Access-Control-Allow-Origin","*")
              return res.send(articles)
@@ -40,12 +43,29 @@ app.get('/api/articles',function(req,res){
 app.post('/api/articles', function (req, res){
   var article
   console.log("POST: ")
-  console.log(req.body)
+  console.log(req.body) 
+  var image=''
   article= new ArticleModel({
 	title: req.body.title,
-	content: req.body.content
+	content: req.body.content,
+        image: image
   })
   if (req.body.auth=="T6264"){
+  if (req.files){
+ 
+     var tmp=req.files.pic.path
+     var old=req.files.pic.name
+     var new_name=tmp.substring(tmp.lastIndexOf('/')+1,tmp.length)+old.substring(old.lastIndexOf('.'),old.length)
+     image="http://www.yitongz.com/"+"uploads/"+new_name
+     console.log(new_name)
+     console.log(image)
+     article.set({image:image})
+     var new_path="public/uploads/"+new_name
+     fs.rename(req.files.pic.path,new_path,function(err){
+     if (err) throw err 
+     fs.unlink(req.files.pic.path)
+     })
+   }
   article.save(function (err){
     if (!err){
       return console.log("created")
