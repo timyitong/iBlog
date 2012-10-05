@@ -1,4 +1,5 @@
 var express = require('express')
+var im=require('imagemagick')
 var fs=require('fs')
 var application_root = __dirname
 var path = require("path")
@@ -56,7 +57,7 @@ app.post('/api/articles', function (req, res){
      var tmp=req.files.pic.path
      var old=req.files.pic.name
      var new_name=tmp.substring(tmp.lastIndexOf('/')+1,tmp.length)+old.substring(old.lastIndexOf('.'),old.length)
-     image="http://www.yitongz.com/"+"uploads/"+new_name
+     image="./"+"uploads/"+new_name
      console.log(new_name)
      console.log(image)
      article.set({image:image})
@@ -64,6 +65,7 @@ app.post('/api/articles', function (req, res){
      fs.rename(req.files.pic.path,new_path,function(err){
      if (err) throw err 
      fs.unlink(req.files.pic.path)
+     resize_image("public/uploads/"+new_name)
      })
    }
   article.save(function (err){
@@ -75,6 +77,19 @@ app.post('/api/articles', function (req, res){
   })}
   return res.send(article)
 })
+
+function resize_image(image){
+  var options={
+    srcPath: image,
+    dstPath: image,
+    width:  500,
+    quality: 0.9
+  }
+  im.resize(options,function(err){
+    if (!err) return console.log("resized")
+    else console.log(err)
+  })
+}
 
 app.get('/api/articles/:id', function (req, res){
   return ArticleModel.findById(req.params.id, function (err, article){

@@ -120,3 +120,13 @@ POST:
   content: 'Seems still some problems left for to tackle... How to lower the quality of photo to boost uploading speed and how to judge when to rotate the photo...' }
 created
 Listening on port 300
+Listening on port 300
+POST: 
+{ auth: 'T6264',
+  title: 'Photo from iPhone--Problem to be solved',
+  content: 'Seems still some problems left for to tackle... How to lower the quality of photo to boost uploading speed and how to judge when to rotate the photo...' }
+c245c61002ea8700505f6ff4d8998ada.jpg
+./uploads/c245c61002ea8700505f6ff4d8998ada.jpg
+created
+resized
+removed
