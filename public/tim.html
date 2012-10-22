@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="./css/tim.css"  type="text/css" media="screen"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src='http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js'></script>
 <script>
 $(function(){
   $("#dbutton").click(function(){
@@ -32,26 +33,73 @@ $(function(){
 });
     }
   })
+
+
 })
+
+function addPreview(obj){
+    //$('#img_preview').attr('src',obj.value)
+    $('#fileName').val(obj.value)
+    console.log(obj)
+}
+$(function(){
+  document.getElementById('file_input').onchange = function (e) {
+      window.loadImage(
+          e.target.files[0],
+          function (img) {
+              $(img).attr('class','img_preview')
+              $('#img').html(img);
+          },
+          {maxWidth: 600}
+      );
+  };
+});
 </script>
+
+<style type="text/css">
+
+.file_input_textbox {height:25px;width:200px;float:left; border:2px solid; border-radius:15px;display: block;background-color: no-repeat;}
+.file_input_div     {position: relative;width:80px;height:26px;overflow: hidden; float:right;margin-bottom:5px;}
+.file_input_button  {width: 80px;position:absolute;top:0px;
+                     border:2px solid;
+                     color:white;
+                     background: black;
+                     font-size: 12px;
+                     padding:2px 8px 2px 8px; font-weight:bold; height:25px; margin:0px; }
+.file_input_button_hover{width:80px;position:absolute;top:0px;
+                     border:1px solid #0A246A; background-color:#B2BBD0;padding:2px 8px 2px 8px; height:25px; margin:0px; font-weight:bold; margin-right:5px; }
+.file_input_hidden  {font-size:45px;position:absolute;right:0px;top:0px;cursor:pointer;
+                     opacity:0;filter:alpha(opacity=0);-ms-filter:"alpha(opacity=0)";-khtml-opacity:0;-moz-opacity:0; }
+.img_preview{float:left;width:20px;height: 20px;}
+#img{float:left;margin-left:20px;}
+</style>
+
 </head>
 <body>
-<h3>POST a MiniBlog</h3>
-    <form enctype="multipart/form-data" method="post" action="./api/articles">
-    <input type="text" name="auth" placeholder="auth" class='auth'></input>
-    <input type="text" name="title" placeholder="title" class='title'></input>
-    <input type="file" name="pic" accept="image/*" capture="camera" class='photo' value="Send a Photo"/>
+<h3><span style="color:#5ac7e2;">Mini</span>Blog</h3>
+    <form enctype="multipart/form-data" method="post" action="./api/articles" style="width:100%;float:left">
+    <input type="text" name="Auth" placeholder="auth" class='auth'></input>
+    <input type="text" name="Title" placeholder="title" class='title'></input>
+  <div id="img"></div>
+  <div class="file_input_div">
+  <input id="fileInputButton" type="button" value="+ Photo" class="file_input_button" />
+  <input id="file_input" type="file" class="file_input_hidden"  name="pic" accept="image/*" capture="camera" class='photo' 
+      onmouseover="document.getElementById('fileInputButton').className='file_input_button_hover';"
+      onmouseout="document.getElementById('fileInputButton').className='file_input_button';"/>
+  </div>
+
+
     <br/>
-    <textarea name="content" placeholder="content" cols="50" rows="10" class='content'>
+    <textarea name="content" cols="50" rows="10" class='content' placeholder="Click to write">
     </textarea>
-    <input type="submit"/>
+    <input type="submit" class="submit"/>
     </form>
-<h3>PUT</h3>
-<h3>DELETE</h3>
-<input type="text" id="aid" placeholder="id"/>
-<input type="text" id="dauth" placeholder="auth"/>
-<input type="button" id="dbutton" value="submit" />
+<h3>DELETE  <span style="color:#5ac7e2;">Mini</span>Blog</h3>
+<input type="text" id="dauth" placeholder="auth" class="auth"/>
+<input type="text" id="aid" placeholder="id" class="title"/>
+<input type="button" id="dbutton" value="Submit" class="submit"/>
 </body>
 </html>
+
 
 

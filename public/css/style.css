@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,11 +70,6 @@ em, i {
 
 strong {font-style:bold;}
 
-#content {
-    position: absolute;
-    margin-left: 254px;
-    width:500px;
-}
 
 /*Headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -136,34 +132,6 @@ h6 {
 }
 
 /* Layout */
-#wrapper {
-    width: 762px;
-    margin: 0;
-    padding: 0 0 0 60px;
-}
-
-#menu {
-    position:fixed;
-    margin: 5.4em 0;
-    /*top: 115px;*/
-    left:20px;
-    width:172px; /*172*/
-    padding:50px;
-    line-height:17px;
-    width:150px;
-    color: #777;
-    font-size: 11px;
-    }
-
-#menu h1 {
-    border-bottom: 1px solid #eee;
-    color: #555;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 28px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
 
 #nav {
     list-style:none;
@@ -274,3 +242,36 @@ h3 {
   height:100%;
   float:left;
 }
+
+        #menu {
+        position:fixed;
+        margin: 5.4em 0;
+        /*top: 115px;*/
+        left:20px;
+        width:172px; /*172*/
+        padding:50px;
+        line-height:17px;
+        width:150px;
+        color: #777;
+        font-size: 11px;
+        }
+
+    #menu h1 {
+        border-bottom: 1px solid #eee;
+        color: #555;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    #wrapper {
+        width: 762px;
+        margin: 0;
+        padding: 0 0 0 60px;
+    }
+    #content {
+        position: absolute;
+        margin-left: 254px;
+        width:500px;
+    }
