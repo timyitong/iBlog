@@ -130,3 +130,25 @@ c245c61002ea8700505f6ff4d8998ada.jpg
 created
 resized
 removed
+POST: 
+{ auth: 'T626433', title: 'The autumn is arriving', content: '' }
+POST: 
+{ auth: 'T6264', title: 'The autumn is arriving', content: '' }
+54542d22ad64fdbe62a1708eb7872355.jpg
+./uploads/54542d22ad64fdbe62a1708eb7872355.jpg
+created
+resized
+POST: 
+{ auth: 'T6264', title: 'Chicago Sky Deck', content: '' }
+7860b92448d6f9b1a5a2633e3931c4ec.jpg
+./uploads/7860b92448d6f9b1a5a2633e3931c4ec.jpg
+created
+resized
+POST: 
+{ auth: 'T6264',
+  title: 'The campus of University of Chicago',
+  content: 'Eh....compared to this, CMU is so ugly.' }
+6fc35008322f9214d5b1962fefa57224.jpg
+./uploads/6fc35008322f9214d5b1962fefa57224.jpg
+created
+resized
