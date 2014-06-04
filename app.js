@@ -51,7 +51,9 @@ app.post('/api/articles', function (req, res){
 	content: req.body.content,
         image: image
   })
+  console.log(req.body.auth)
   if (req.body.auth=="T6264"){
+  console.log("hi")
   if (req.files){
  
      var tmp=req.files.pic.path
@@ -149,5 +151,5 @@ app.delete('/api/articles',function(req,res){
 })
 
 app.listen(3000);
-console.log("Listening on port 300")
+console.log("Listening on port 3000")
 

@@ -152,3 +152,154 @@ POST:
 ./uploads/6fc35008322f9214d5b1962fefa57224.jpg
 created
 resized
+POST: 
+{ Auth: 'T6264',
+  Title: 'View from the sky deck at Willis Tower, Chicago',
+  content: '    ' }
+POST: 
+{ Auth: 'T6264',
+  Title: 'View from the sky deck at Willis Tower, Chicago',
+  content: '    ' }
+POST: 
+{ Auth: 'T6264',
+  Title: 'View from the sky deck at Willis Tower, Chicago',
+  content: '    Feeling great!' }
+POST: 
+{ Auth: 'T6264', Title: 'Great', content: '    ' }
+POST: 
+{ Auth: 'T6264', Title: 'sdfs', content: '    sdfs' }
+POST: 
+{ Auth: 'T6264', Title: 'sdfs', content: '    sdfs' }
+POST: 
+{ Auth: 'T6264', Title: 'sdfdsf', content: ' sdfsdfsd' }
+Listening on port 300
+POST: 
+{ Auth: 'T6264', Title: 'test', content: '    ' }
+POST: 
+{ Auth: 'T6264', Title: 'test', content: '    sdfsd' }
+POST: 
+{ Auth: 'T6264', Title: 'sdfsd', content: '    ' }
+POST: 
+{ Auth: 'T6264', Title: 'sdfsd', content: '    ' }
+Listening on port 300
+Listening on port 300
+POST: 
+{ auth: 'T6264',
+  title: 'I saw the real piece!',
+  content: '    ' }
+T6264
+hi
+287fa9bf89160e6f0957b64ecb158a06.jpg
+./uploads/287fa9bf89160e6f0957b64ecb158a06.jpg
+created
+resized
+POST: 
+{ auth: 'T6264', title: 'T Rex', content: '    ' }
+T6264
+hi
+beca292106ff02da292c0996b0b044b9.jpg
+./uploads/beca292106ff02da292c0996b0b044b9.jpg
+created
+resized
+POST: 
+{ auth: 'T6264',
+  title: 'The -O options of gcc Compiler',
+  content: 'Barely start to learn c++, it really bothers me that my c++ kNN algorithm implementation runs even slower than Java. Luckily, I finally find this problem is due to the default compile optimization of gcc compiler is set to -O0, which is for debug and is slowest to run. Change -O0 to -O2 -O3 or even -Ofast can vastly improve the results. I am just wondering why the C++ textbook does not mention such trivial details. I spent three days go over the 250 pages of Essential C++, and the author never mentions the different compiling mode of C++.' }
+T6264
+hi
+005bfaf78f55ea909240aabea93c6b5c
+./uploads/005bfaf78f55ea909240aabea93c6b5c
+created
+{ [Error: Command failed: convert: no decode delegate for this image format `public/uploads/005bfaf78f55ea909240aabea93c6b5c' @ constitute.c/ReadImage/530.
+convert: missing an image filename `public/uploads/005bfaf78f55ea909240aabea93c6b5c' @ convert.c/ConvertImageCommand/2838.
+] timedOut: false, killed: false, code: 1, signal: null }
+removed
+POST: 
+{ auth: 'T6264',
+  title: 'The -O options of gcc Compiler ',
+  content: 'Barely start to learn c++, it really bothers me that my c++ kNN algorithm implementation runs even slower than Java. Luckily, I finally find this problem is due to the default compile optimization of gcc compiler is set to -O0, which is for debug and is slowest to run. Change -O0 to -O2 -O3 or even -Ofast can vastly improve the results. I am just wondering why the C++ textbook does not mention such trivial details. I spent three days go over the 250 pages of Essential C++, and the author never mentions the different compiling mode of C++.' }
+T6264
+hi
+bffbe8078a1fccdf7ceb7616ef2a6c15.png
+./uploads/bffbe8078a1fccdf7ceb7616ef2a6c15.png
+created
+resized
+POST: 
+{ auth: 'T6264',
+  title: 'Coding on Miami Beach : )',
+  content: '    ' }
+T6264
+hi
+74f7d28bd9529e7bab27c6833348e5d2.jpg
+./uploads/74f7d28bd9529e7bab27c6833348e5d2.jpg
+created
+resized
+POST: 
+{ auth: 'T6264',
+  title: 'This is Ca\'lifor\'nia',
+  content: '    ' }
+T6264
+hi
+6e73fdb0adfc9db0f815ee9848999c4e.jpg
+./uploads/6e73fdb0adfc9db0f815ee9848999c4e.jpg
+created
+resized
+Listening on port 3000
+POST: 
+{ auth: 'T6264',
+  title: 'Linode VPS shutdown',
+  content: 'My Linode VPS went into a "migration queue", as stated by the linode maintenance team in an email. But unexpectedly, "entering migration queue" actually means they will shut down your server just like a power off. How am I supposed to know that!? So unfortunately all my stuff is shutdown yesterday morning, and it quite took me sometime to restore all the services. Nginx, Rails, node, Redis, MongoDB are saved. But I think my php and tomcat environments are still messed up. Despite all these troubles, Linode has always been a great service. Hope next time, they will be more considerate about the wording...' }
+T6264
+hi
+ff78036851e73fb95ad69e5d5716eb53
+./uploads/ff78036851e73fb95ad69e5d5716eb53
+created
+{ [Error: Command failed: convert: no decode delegate for this image format `public/uploads/ff78036851e73fb95ad69e5d5716eb53' @ constitute.c/ReadImage/530.
+convert: missing an image filename `public/uploads/ff78036851e73fb95ad69e5d5716eb53' @ convert.c/ConvertImageCommand/2838.
+] timedOut: false, killed: false, code: 1, signal: null }
+Error: Requested Range Not Satisfiable
+    at SendStream.error (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:142:16)
+    at SendStream.send (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:359:19)
+    at SendStream.pipe (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:319:10)
+    at Object.oncomplete (fs.js:297:15)
+Error: Requested Range Not Satisfiable
+    at SendStream.error (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:142:16)
+    at SendStream.send (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:359:19)
+    at SendStream.pipe (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:319:10)
+    at Object.oncomplete (fs.js:297:15)
+Error: Bad Request
+    at SendStream.error (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:142:16)
+    at SendStream.pipe (/home/timyitong/iblog/node_modules/express/node_modules/send/lib/send.js:295:31)
+    at Object.static (/home/timyitong/iblog/node_modules/express/node_modules/connect/lib/middleware/static.js:77:8)
+    at next (/home/timyitong/iblog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+    at pass (/home/timyitong/iblog/node_modules/express/lib/router/index.js:111:24)
+    at Router._dispatch (/home/timyitong/iblog/node_modules/express/lib/router/index.js:173:5)
+    at Object.router (/home/timyitong/iblog/node_modules/express/lib/router/index.js:33:10)
+    at next (/home/timyitong/iblog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+    at Object.methodOverride [as handle] (/home/timyitong/iblog/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:37:5)
+    at next (/home/timyitong/iblog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+POST: 
+{ auth: 'T6264',
+  title: 'Pittsburgh is always great in fall ',
+  content: '    ' }
+T6264
+hi
+782dbf90d74a5eb1c606afb55a52dcb4.jpg
+./uploads/782dbf90d74a5eb1c606afb55a52dcb4.jpg
+created
+resized
+POST: 
+{ auth: 't6264',
+  title: 'Pittsburgh 0 degree, no joking :-/',
+  content: '    ' }
+t6264
+POST: 
+{ auth: 'T6264',
+  title: 'Pittsburgh 0 degree, no joking :-/',
+  content: '    ' }
+T6264
+hi
+4750f8ab21abe442d3f4c48b27600313.jpg
+./uploads/4750f8ab21abe442d3f4c48b27600313.jpg
+created
+resized
